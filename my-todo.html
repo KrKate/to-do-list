@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Список дел</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Лучше один раз записать, чем сто раз запомнить!">
+	<meta name="keywords" content="список дел, to-do, todo list">
+	<meta name="wiewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.ico" sizes="32x32" type="image/ico">
+	<link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/ico">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="my-todo-styles.css">
+	<script src="jquery-3.6.1.min.js"></script>
+	<script src="my-todo.js"></script>
+</head>
+<body>
+	<div class="container">
+	<section class="inputSide">
+		<h2>Добавить новое дело</h2>
+		<div class="inputForm">
+			<h3>*Название</h3>
+			<input class="addCaseInput" type="text" placeholder="Отправить письмо">
+			<h3>*Описание</h3>
+			<textarea class="addCaseTextarea" type="text" placeholder="По адресу..."></textarea>
+			<button class="addCaseButton">Добавить дело</button>
+		</div>
+	</section>	
+
+	<section class="showSide">
+		<h2>Список дел:</h2>
+		<div class="emptyList">Список пуст...</div>
+		<!--Этот блок будет выводиться при добавлении дел. 
+			Он прописан здесь для того чтобы было визуально удобно прописать style-->
+		<div class="showForm">
+			<!--<div class="showContainer">
+				<span class=showInput></span>
+				<button class="clearButton"></button>
+				<button class="showButton"></button>
+			</div>
+			<div class="showTextarea"></div>-->
+		</div>
+	</section>	
+</div>
+		
+</body>
+</html>
